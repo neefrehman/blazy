@@ -3,9 +3,10 @@ I was looking for a vanilla alternative to [unveil.js](https://github.com/luis-a
 
 #### Changes
 * No IE7 support
-* Only really lazily loads images, no success or error handling, no breakpoints, no containers
+* Only lazily loads images and a few other important things, no success or error handling, no breakpoints, no containers
 * Removed options can be seen below, options with defaults have been replaced by their defaults throughout the package (details on options can be found [here](http://dinbror.dk/blog/blazy/)
 * 8KB down from 14, and 2KB down from 5 when minified
+* No support for ```<picture>``` or ```<video>``` tags, unity games, iframes, etc.
 
 #### Removed options
 * ```util.destroyed```
