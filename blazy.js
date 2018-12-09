@@ -198,14 +198,6 @@
         }
     }
 
-    function unbindEvent(ele, type, fn) {
-        if (ele.detachEvent) {
-            ele.detachEvent && ele.detachEvent('on' + type, fn);
-        } else {
-            ele.removeEventListener(type, fn, { capture: false, passive: true });
-        }
-    }
-
     function each(object, fn) {
         if (object && fn) {
             var l = object.length;
