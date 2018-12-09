@@ -114,8 +114,6 @@
                 // Image or background image
                 if (isImage || ele.src === undefined) {
                     var img = new Image();
-                    var onErrorHandler = function() {
-                    };
                     var onLoadHandler = function() {
                         // Is element an image
                         if (isImage) {
@@ -126,7 +124,6 @@
                         }
                         itemLoaded(ele, options);
                     };
-                    bindEvent(img, 'error', onErrorHandler);
                     bindEvent(img, 'load', onLoadHandler);
                     handleSources(img, src, srcset); // Preload
 
