@@ -13,6 +13,7 @@ I was looking for a vanilla alternative to [unveil.js](https://github.com/luis-a
 * ```error```
 * ```root```
 * ```success```
+* ```selector``` (replaced by using ```options.src``` in querySelectorAll when finding ```nodeList```
 * ```separator```
 * ```containerClass```
 * ```container```
