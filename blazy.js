@@ -19,7 +19,6 @@
         util.elements = [];
         scope.options = options || {};
         scope.options.offset = scope.options.offset || 100;
-        scope.options.selector = scope.options.selector || '.b-lazy';
         scope.options.srcset = scope.options.srcset || 'data-srcset';
         scope.options.src = _source = scope.options.src || 'data-src';
         _isRetina = window.devicePixelRatio > 1;
@@ -180,7 +179,7 @@
 
     function toArray(options) {
         var array = [];
-        var nodelist = document.querySelectorAll(options.selector);
+        var nodelist = document.querySelectorAll(`[${options.src}]`);
         for (var i = nodelist.length; i--; array.unshift(nodelist[i])) {}
         return array;
     }
