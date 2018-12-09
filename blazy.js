@@ -111,7 +111,6 @@
                 var srcset = getAttr(ele, options.srcset);
                 var isImage = equal(ele, 'img');
                 var parent = ele.parentNode;
-                var isPicture = parent && equal(parent, 'picture');
                 // Image or background image
                 if (isImage || ele.src === undefined) {
                     var img = new Image();
@@ -120,9 +119,7 @@
                     var onLoadHandler = function() {
                         // Is element an image
                         if (isImage) {
-                            if(!isPicture) {
-                                handleSources(ele, src, srcset);
-                            }
+                            handleSources(ele, src, srcset);
                         // or background-image
                         } else {
                             ele.style.backgroundImage = `url(${src})`;
