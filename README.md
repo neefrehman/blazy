@@ -1,4 +1,32 @@
-#hey, be lazy
+### Forked to make bLazy even lighter and simpler.
+I was looking for a vanilla alternative to [unveil.js](https://github.com/luis-almeida/unveil), and luckily found bLazy, but felt it still was a bit too bulky for my basic needs, so I've forked it to create a slightly simpler and lighter package.
+
+#### Changes
+* No IE7 support
+* Only really lazily loads images, no success or error handling, no breakpoints, no containers
+* Removed options can be seen below, options with defaults have been replaced by their defaults throughout the package (details on options can be found [here](http://dinbror.dk/blog/blazy/)
+* 8KB down from 14, and 2KB down from 5 when minified
+
+#### Removed options
+* ```util.destroyed```
+* ```error```
+* ```root```
+* ```success```
+* ```separator```
+* ```containerClass```
+* ```container```
+* ```errorClass```
+* ```breakpoints```
+* ```loadInvisible```
+* ```successClass```
+* ```validateDelay```
+* ```saveViewportOffsetDelay```
+
+Original readme below :)
+
+----------------------
+
+# hey, be lazy
 [![Downloads](https://img.shields.io/npm/dm/blazy.svg?style=flat)](https://www.npmjs.com/package/blazy)
 [![Latest Stable Version](https://img.shields.io/npm/v/blazy.svg?style=flat)](https://www.npmjs.com/package/blazy)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dinbror/blazy/blob/master/LICENSE)
